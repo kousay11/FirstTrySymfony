@@ -28,10 +28,10 @@ class AppFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
         for ($i=0; $i < 50 ; $i++) { 
-            $ingridient= new Ingridient();
-            $ingridient->setName($this->faker->word())
+            $ingredient= new Ingridient();
+            $ingredient->setName($this->faker->word())
                 ->setPrice(3.0);
-        $manager->persist($ingridient);
+        $manager->persist($ingredient);
         }
         
         $manager->flush();
