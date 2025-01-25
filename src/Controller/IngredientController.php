@@ -114,6 +114,15 @@ class IngredientController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+   
+    
+    /**
+     * Undocumented function
+     *
+     * @param integer $id
+     * @param EntityManagerInterface $manager
+     * @return Response
+     */
     #[Route('/ingredient/suppression/{id}', name: 'ingredient.delete', methods: ['GET'])]
     public function delete(
         int $id,  // Utiliser l'ID directement
